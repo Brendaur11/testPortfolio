@@ -472,8 +472,8 @@ section {
 }
 
 #img-home{
-   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.507), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-   border: 3px solid var(--main-color);
+   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.507), 0 10px 10px -5px rgba(0, 0, 0, 0.04) ;
+   border: 1px solid #a5bedb;
    border-radius: 8px;
 }
 
@@ -504,6 +504,10 @@ section {
     background: var(--second-bg-color);
     gap: 2rem;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
 }
 
 #about-tittle{
@@ -514,13 +518,46 @@ section {
     font-weight: 700;
 }
 
-#about_content{
-    background: rgba(75, 75, 75, 0.151); /* Fondo transparente */
+.diffused-circle {
+    position: absolute;
+    top: 450px; /* Ajusta según sea necesario */
+    right: -100px;
+    width: 600px; /* Ajusta el tamaño según sea necesario */
+    height: 400px; /* Ajusta el tamaño según sea necesario */
+    background: rgba(119, 151, 212, 0.425);
+    border-radius: 1000px 1000px 0 0;
+    transform: rotate(270deg);
+    filter: blur(80px); 
+    z-index: 0; /* Asegura que el círculo esté detrás del contenido */
+}
+
+.diffused-circle2{
+    position: absolute;
+    top: 200px; /* Ajusta según sea necesario */
+    left: -160px;
+    width: 450px; /* Ajusta el tamaño según sea necesario */
+    height: 250px; /* Ajusta el tamaño según sea necesario */
+    background: rgba(162, 119, 212, 0.568);
+    border-radius: 1000px 1000px 0 0;
+    transform: rotate(90deg);
+    filter: blur(50px); 
+    z-index: 0; /* Asegura que el círculo esté detrás del contenido */
+}
+
+@media (max-width: 823px) {
+    .diffused-circle2 {
+      display: none;
+      filter: blur(300px); /* Difuminar los elementos */
+    }
+  }
+
+/* #about_content{
+    background: rgba(75, 75, 75, 0.151); 
             border-radius: 10px;
-            backdrop-filter: blur(10px); /* Efecto de difuminado */
+            backdrop-filter: blur(10px); 
             -webkit-backdrop-filter: blur(10px);
     border: 1px solid #80808052;
-}
+} */
 
 .heading{
     font-size: 3rem;

@@ -53,22 +53,24 @@
   <!-- HOME -->
   <div id="home"></div>
   <!-- gradient bg home-->
-  <div style="background: rgb(0,9,29); background: linear-gradient(180deg, rgba(0,9,29,1) 31%, rgba(54,62,73,0) 88%); height: 10rem;"></div>
+  <!-- <div style="background: rgb(0,9,29); background: linear-gradient(180deg, rgba(0,9,29,1) 31%, rgba(54,62,73,0) 88%); height: 10rem;"></div> -->
 
   <main>
     <!-- ABOUT -->
-    <div class="static bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]" style="background-attachment: fixed;" id="about-container"></div>
+    <div style="background-attachment: fixed; background-color: #061535;" id="about-container"></div>
 
     <!-- EXPIRIENCES -->
-    <section class="centered-container static bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]" style="background-attachment: fixed; display: flex; flex-direction: column;">
-      <div class="about-tittle" id="about-tittle">
-        <h2 class="heading">Experi<span>ences</span></h2>
+    <div class="about-tittle" id="about-tittle" style="background-color: #061535; margin-bottom: none !important;">
+      <h2 class="heading">Experi<span>ences</span></h2>
+    </div>
+    <section class="centered-container " style="height: 720px; display: flex; flex-direction: column; background-image: url(assets/images/bg-experiences.png);">
+      <div class="containerExperiences w-2/3 h-96" style="background-color: #3b3b3b48; border-radius: 5px; backdrop-filter: blur(10px);">
+        <div class="flex justify-center mt-8" id="experiences"></div>
       </div>
-      <div class="flex justify-center mt-8" id="experiences"></div>
     </section>
 
     <!-- SKILLS -->
-    <section class="text-gray-600 body-font fiexd static bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]" style="background-attachment: fixed;" id="skills">
+    <section style="background-attachment: fixed; background-color: #061535;" id="skills">
       <div class="about-tittle" id="about-tittle">
         <h2 class="heading">Ski<span>lls</span></h2>
       </div>
@@ -154,7 +156,7 @@
     </section>
 
     <!-- PROYECTS AND CERTIFICATES -->
-    <section class="text-gray-600 body-font fiexd static bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]" style="background-attachment: fixed;" id="portfolio" >
+    <section style="background-attachment: fixed; background-color: #00091d;" id="portfolio" >
       <div class="about-tittle" id="about-tittle">
         <h2 class="heading">Port<span>folio</span></h2>
       </div>
@@ -186,10 +188,10 @@
     </section>
 
     <!-- end bg -->
-    <div class="relative h-full w-full bg-red"><div class="relative bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#f70800_30%,transparent_100%)]" style="height: 20rem; background-attachment: fixed;"></div></div>
+    <!-- <div class="relative h-full w-full bg-red"><div class="relative bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#f70800_30%,transparent_100%)]" style="height: 20rem; background-attachment: fixed;"></div></div> -->
 
     <!-- Tarjetas skills -->
-    <div class="container py-24" style="background-color: var(--bg-color);" id="afterSkills">
+    <div class="container py-24" style="background-color: #00091d;" id="afterSkills">
       <div class="flex flex-wrap -m-4 text-center" id="tarjetasInfo">
         <div class="p-4 md:w-1/4 sm:w-1/2 w-full ">
           <div class="border-2 border-gray-200 px-1 py-6 rounded-lg" id="contenedor-Skills">

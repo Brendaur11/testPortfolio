@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function crearTimeline() {
         const timeline = document.createElement('ol');
-        timeline.classList = 'relative border-l-2 border-gray-700 dark:border-gray-700 ';
+        timeline.classList = 'relative border-l-2 border-gray-700 dark:border-gray-700';
 
         EXPERIENCES.forEach(exp => {
             const li = document.createElement('li');
