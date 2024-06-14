@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
         allowTouchMove: true,
         effect: "cards",
         autoplay: {
-          delay: 2000,
+          delay: 1000,
           pauseOnMouseEnter: true,
           disableOnInteraction: false,
         },
@@ -95,6 +95,34 @@ document.addEventListener('DOMContentLoaded', function() {
         // },
   });    
 });
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   const swiper = new Swiper('.swiperSkills', {
+//         slidesPerView: "auto",
+//         spaceBetween: 30,
+//         slidesPerGroupAuto: 10,
+
+//         direction: "horizontal",
+//         loop: true,
+//         allowTouchMove: true,
+//         autoplay: {
+//           delay: 1000,
+//           pauseOnMouseEnter: true,
+//           disableOnInteraction: false,
+//         },
+
+//         pagination: {
+//           el: ".swiper-pagination",
+//           clickable: true,
+//           dynamicBullets: true
+//         },
+
+//         navigation: {
+//           nextEl: ".swiper-button-next",
+//           prevEl: ".swiper-button-prev",
+//         },
+//   });    
+// });
 
 
 
@@ -183,25 +211,3 @@ lightbox.option({
   'albumLabel': "Image 1% de 2%"
 })
 
-// FORM MESSAGE
-document.addEventListener('DOMContentLoaded', function() {
-  document.forms['contact'].addEventListener('submit', function(event) {
-    event.preventDefault();
-    var form = event.target;
-    var formData = new FormData(form);
-
-    fetch('/', {
-      method: 'POST',
-      body: formData,
-    }).then(response => {
-      if (response.ok) {
-        document.getElementById('statusMessage').innerHTML = '<p>¡Gracias! El formulario ha sido enviado con éxito.</p>';
-        form.reset();
-      } else {
-        document.getElementById('statusMessage').innerHTML = '<p>Ocurrió un error al enviar el formulario.</p>';
-      }
-    }).catch(error => {
-      document.getElementById('statusMessage').innerHTML = '<p>Ocurrió un error al enviar el formulario.</p>';
-    });
-  });
-});
