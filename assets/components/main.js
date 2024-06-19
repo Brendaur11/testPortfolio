@@ -61,15 +61,21 @@ document.addEventListener('DOMContentLoaded', function() {
   const swiper = new Swiper('.swiper-hero', {
         // Optional parameters
         slidesPerView: "auto",
+        breakpoints: {
+          // cuando la pantalla tenga 640px o menos
+          1295: {
+            slidesPerView: 4, // En pantallas pequeñas, se usa 'auto'
+          },
+        },
         spaceBetween: 30,
-        slidesPerGroupAuto: 10,
+        slidesPerGroupAuto: 1,
 
         direction: "horizontal",
-        loop: true,
+        // loop: true,
         allowTouchMove: true,
-        effect: "cards",
+        // effect: "coverflow",
         autoplay: {
-          delay: 1000,
+          delay: 2000,
           pauseOnMouseEnter: true,
           disableOnInteraction: false,
         },
@@ -88,6 +94,8 @@ document.addEventListener('DOMContentLoaded', function() {
           prevEl: ".swiper-button-prev",
         },
 
+
+        debugger: true, // Activa el modo de depuración
         // And if we need scrollbar
         // scrollbar: {
         //   el: ".swiper-scrollbar",
@@ -96,33 +104,34 @@ document.addEventListener('DOMContentLoaded', function() {
   });    
 });
 
-// document.addEventListener('DOMContentLoaded', function() {
-//   const swiper = new Swiper('.swiperSkills', {
-//         slidesPerView: "auto",
-//         spaceBetween: 30,
-//         slidesPerGroupAuto: 10,
+document.addEventListener('DOMContentLoaded', function() {
+  const swiper = new Swiper('.swiperSkills', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        slidesPerGroupAuto: 1,
 
-//         direction: "horizontal",
-//         loop: true,
-//         allowTouchMove: true,
-//         autoplay: {
-//           delay: 1000,
-//           pauseOnMouseEnter: true,
-//           disableOnInteraction: false,
-//         },
+        direction: "horizontal",
+        loop: true,
+        allowTouchMove: true,
+        // effect: "coverflow",
+        autoplay: {
+          delay: 1000,
+          pauseOnMouseEnter: true,
+          disableOnInteraction: false,
+        },
 
-//         pagination: {
-//           el: ".swiper-pagination",
-//           clickable: true,
-//           dynamicBullets: true
-//         },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true
+        },
 
-//         navigation: {
-//           nextEl: ".swiper-button-next",
-//           prevEl: ".swiper-button-prev",
-//         },
-//   });    
-// });
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+  });    
+});
 
 
 
@@ -170,7 +179,7 @@ menuList.style.maxHeight = "0px";
 
 function toggleMenu() {
   if (menuList.style.maxHeight === "0px") {
-    menuList.style.maxHeight = "300px";
+    menuList.style.maxHeight = "350px";
     menuIcon.classList.remove('bx-menu');
     menuIcon.classList.add('bx-x');
   } else {

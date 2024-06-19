@@ -150,6 +150,7 @@ section {
     -moz-box-shadow: inset 19px -18px 87px -61px rgba(0,0,0,0.28); */
 }
 
+/* ----------------------------------------------------------------------
 
 /* MEDIA QUERY PARA HEADER */
 
@@ -182,7 +183,7 @@ section {
     transition: 0.3s;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 910px) {
     .container-header {
         width: 100%;
         border-radius: 0;
@@ -229,6 +230,8 @@ section {
         transition: all 0.5s;
     }
 }
+
+/* ----------------------------------------------------------------------
 
 /* HOME */
 #home{
@@ -494,6 +497,8 @@ section {
     }
 }
 
+/* ----------------------------------------------------------------------
+
 /* ==== ABOUT ==== */
 .about{
     display: flex;
@@ -544,6 +549,19 @@ section {
     z-index: 0; /* Asegura que el círculo esté detrás del contenido */
 }
 
+/* .diffused-circle3{
+    position: absolute;
+    top: 550px;
+    right: 500px;
+    width: 600px; 
+    height: 400px;
+    background: rgba(119, 151, 212, 0.425);
+    border-radius: 1000px 1000px 0 0;
+    transform: rotate(360deg);
+    filter: blur(80px); 
+    z-index: 0; 
+} */
+
 @media (max-width: 823px) {
     .diffused-circle2 {
       display: none;
@@ -572,6 +590,7 @@ span{
     text-align: justify;
 }
 
+/* ----------------------------------------------------------------------
 
 /* EXPIRIENCES */
 @media (max-width: 767px) {
@@ -580,7 +599,7 @@ span{
     }
 }
 
-#experiences{
+#experiencesInfo{
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -630,6 +649,7 @@ section.centered-container {
     border-radius: inherit; /* Heredar el border-radius si se usa */
 }
 
+/* ----------------------------------------------------------------------
 
 /* SKILSS */
 .skills{
@@ -646,19 +666,19 @@ section.centered-container {
     font-weight: 700;
 }
 
-#skills-container{
-    background: rgba(75, 75, 75, 0.151); /* Fondo transparente */
+/* #skills-container{
+    background: rgba(75, 75, 75, 0.151);
     border-radius: 10px;
-    backdrop-filter: blur(10px); /* Efecto de difuminado */
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid #80808052;
-}
+} */
 
-@media (max-width: 570px) {
+/* @media (max-width: 570px) {
     .content-skills {
        width:40% !important;
     }
-}
+} */
 
 .w-85 {
     width: 85%;
@@ -725,6 +745,12 @@ section.centered-container {
     transform: translateY(0.5em);
     transition: 0.5s;
 }
+
+/* .swiper-button-prev{
+    margin-right: 30rem;
+} */
+
+/* ----------------------------------------------------------------------
 
 /* PORTFOLIO */
 #container-portfolio{
@@ -902,6 +928,8 @@ section.centered-container {
     background-attachment: fixed;
     background-size: cover;
 }
+
+/* ----------------------------------------------------------------------
 
 /* CONTACT */
 

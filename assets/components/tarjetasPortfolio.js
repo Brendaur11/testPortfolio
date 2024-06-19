@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
         portfolioContainer.innerHTML = ''; // Limpiar el contenedor antes de añadir nuevas tarjetas
         proyectos.forEach(proyecto => {
             const nuevoProyecto = document.createElement("div");
-            nuevoProyecto.classList = "tarjeta lg:w-3/4 md:w-3/4 p-4 w-full mt-8"; // Asegúrate de que la clase 'tarjeta' se añade aquí
+            nuevoProyecto.classList = "tarjeta lg:w-3/4 md:w-3/4 p-4 w-full mt-8 mx-auto"; // Asegúrate de que la clase 'tarjeta' se añade aquí
             nuevoProyecto.innerHTML = `
-            <div class="flex sm:-m-4 -mx-4 -mb-10 -mt-4">
+            <div class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
                 <div class="rounded-lg h-48 w-96 overflow-hidden">
                     <img alt="content" class="object-cover object-center h-full w-full" src="${proyecto.imagen}">
                 </div>

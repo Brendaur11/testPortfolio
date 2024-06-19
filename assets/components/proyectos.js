@@ -24,6 +24,7 @@ const proyectos = [
         categoria: "PROYECT",
         titulo: "Portfolio",
         imagen: "https://dummyimage.com/422x262",
+        description: "",
         links: [
             { href: "#", icon: "bx bx-navigation" },
             { href: "#", icon: "bx bxl-github" }
@@ -33,6 +34,7 @@ const proyectos = [
         categoria: "PROYECT",
         titulo: "Tienda Coffee",
         imagen: "https://dummyimage.com/423x263",
+        description: "",
         links: [
             { href: "#", icon: "bx bx-navigation" },
             { href: "#", icon: "bx bxl-github" }
@@ -42,6 +44,7 @@ const proyectos = [
         categoria: "PROYECT",
         titulo: "Carrito de Compras Apple",
         imagen: "https://dummyimage.com/424x264",
+        description: "",
         links: [
             { href: "#", icon: "bx bx-navigation" },
             { href: "#", icon: "bx bxl-github" }
@@ -51,6 +54,7 @@ const proyectos = [
         categoria: "PROYECT",
         titulo: "Form Login & Register",
         imagen: "https://dummyimage.com/425x265",
+        description: "",
         links: [
             { href: "#", icon: "bx bx-navigation" },
             { href: "#", icon: "bx bxl-github" }

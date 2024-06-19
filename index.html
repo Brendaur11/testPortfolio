@@ -42,6 +42,7 @@
       <ul id="menuList">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
+        <a href="#experiences">Experiences</a>
         <a href="#skills">Skills</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>  
@@ -60,39 +61,39 @@
     <div style="background-attachment: fixed; background-color: #061535;" id="about-container"></div>
 
     <!-- EXPIRIENCES -->
-    <section style="height: 600px; padding: 0 !important; " class="section-experience">
+    <section style="height: 600px; padding: 0 !important; " class="section-experience" id="experiences">
       <div class="about-tittle mt-8" id="about-tittle" >
         <h2 class="heading">Experi<span>ences</span></h2>
       </div>
 
-      <div class="flex mt-8 mx-auto max-lg:mx-2 max-lg-w-full-important" id="experiences"></div>
+      <div class="flex mt-8 mx-auto max-lg:mx-2 max-lg-w-full-important " id="experiencesInfo"></div>
       </div>
     </section>
 
     <!-- SKILLS -->
-    <section style="background-attachment: fixed; background-color: #061535;" id="skills">
+    <section class="relative" style="background-attachment: fixed; background-color: #061535;" id="skills">
       <div class="about-tittle" id="about-tittle">
         <h2 class="heading">Ski<span>lls</span></h2>
       </div>
   
-      <div class="container px-5 py-24 mx-auto justify-between flex flex-col lg:flex-row" id="skills-container">
+      <div class="container px-5 py-24 mx-auto justify-between flex flex-col" id="skills-container">
         <div class="flex flex-col">
-          <div class="lg:w-full lg:pr-4 ml-12 w-85" >
-              <div class="text-center mb-8">
-                  <p class="text-base leading-relaxed w-full mx-auto text-justify" id="text-skills">I delved into the world of development and was fascinated by its diversity. Through courses, I specialized in frontend development, mastering JavaScript and its tools. Throughout my work career, I have explored different technologies, highlighting the creation of dynamic web interfaces. Nowadays, I am focused on enhancing my skills in JavaScript and Tailwind CSS to develop innovative web experiences. My next paths to explore are React and Node.js.</p>
-              </div>
+          <div class="lg:w-full lg:pr-4 w-full justify-center align-items" >
+            <div class="text-center mb-8">
+                <p class="text-base leading-relaxed w-full mx-auto text-justify" id="text-skills">I delved into the world of development and was fascinated by its diversity. Through courses, I specialized in frontend development, mastering JavaScript and its tools. Throughout my work career, I have explored different technologies, highlighting the creation of dynamic web interfaces. Nowadays, I am focused on enhancing my skills in JavaScript and Tailwind CSS to develop innovative web experiences. My next paths to explore are React and Node.js.</p>
+            </div>
           </div>
-          <div class="rounded-lg h-64 overflow-hidden ml-12 w-85" >
+          <!-- <div class="rounded-lg h-64 overflow-hidden ml-12 w-85" >
               <img alt="content" class="object-cover object-center h-full w-full" src="assets/images/programming-background-with-person-working-with-codes-computer.jpg">
-          </div>
+          </div> -->
         </div>
       
-        <div class="CardsSkills w-full lg:max-w-lg lg:mx-auto lg:w-full lg:pl-4">
-          <div class="LookSkills justify-between flex ml-40 w-28 h-20">
+        <div class="CardsSkills w-full lg:mx-auto lg:w-full lg:pl-4 p-4">
+          <div class="LookSkills justify-between flex m-4 w-28 h-20">
             <p style="color: #a1a1a1; font-family: 'Amatic SC'; font-size: 23px;" >Look my skills</p><svg style="transform: rotate(45deg);" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#7d7d7d"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M56 270.5C56 256.429 79.5553 218.859 120.902 197.186C162.249 175.512 194.07 164.5 242.113 164.5C274.142 164.5 306.771 175.395 340 197.186" stroke="#a1a1a1" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="16 32"></path> <path d="M325.63 129C337.877 172.588 344 195.072 344 196.45C344 198.518 308.436 212.998 292 235" stroke="#a1a1a1" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
           </div>
-          <div class="content-skills flex flex-col lg:flex-row justify-start">
-            <div class="swiper-container w-3/4 mx-auto" style="width: 20%;">
+          <div class="content-skills flex flex-col justify-start lg:w-full">
+            <div class="swiper-container w-3/4 mx-auto" style="width: 100%;">
               <div class="swiper swiper-hero w-full">
                 <div class="swiper-wrapper" id="swiper_wrapper">
                   <!-- Slides -->
@@ -143,8 +144,8 @@
                 <!-- <div class="swiper-pagination"></div> -->
                 
                 <!-- If we need navigation buttons -->
-                <!-- <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div> -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
                 
                 <!-- If we need scrollbar -->
                 <!-- <div class="swiper-scrollbar"></div> -->
@@ -155,27 +156,8 @@
       </div>
     </section>
 
-    <!-- <div class="divSkills h-32 w-8/12" >
-      <div class="swiperSkills mx-auto">
-        <div class="swiper-wrapper w-28">
-          <div class="swiper-slide m-4"><img src="assets/images/Bootstrap.png" alt=""></div>
-          <div class="swiper-slide m-4"><img src="assets/images/css3.png" alt=""></div>
-          <div class="swiper-slide m-4"><img src="assets/images/html5.png" alt=""></div>
-          <div class="swiper-slide m-4"><img src="assets/images/html5.png" alt=""></div>
-          <div class="swiper-slide m-4"><img src="assets/images/js.png" alt=""></div>
-          <div class="swiper-slide m-4"><img src="assets/images/js.png" alt=""></div>
-          <div class="swiper-slide m-4"><img src="assets/images/Bootstrap.png" alt=""></div>
-          <div class="swiper-slide m-4"><img src="assets/images/Bootstrap.png" alt=""></div>
-          <div class="swiper-slide m-4"><img src="assets/images/Bootstrap.png" alt=""></div>
-          <div class="swiper-slide m-4"><img src="assets/images/Bootstrap.png" alt=""></div>
-          <div class="swiper-slide m-4">Slide 2</div>
-          <div class="swiper-slide m-4">Slide 3</div>
-        </div>
-      </div>
-    </div> -->
-
     <!-- PROYECTS AND CERTIFICATES -->
-    <section style="background-attachment: fixed; background-color: #00091d;" id="portfolio" >
+    <section style="background-attachment: fixed;" id="portfolio" >
       <div class="about-tittle" id="about-tittle">
         <h2 class="heading">Port<span>folio</span></h2>
       </div>
@@ -202,7 +184,7 @@
             </div>
           </div>
           
-          <div class="text-gray-600 body-font -m-4 flex flex-wrap justify-center" id="tarjetasPortfolio"></div>
+          <div class="text-gray-600 body-font flex flex-col gap-y-16 justify-center align-items" id="tarjetasPortfolio"></div>
         </div>
     </section>
 
@@ -210,7 +192,7 @@
     <!-- <div class="relative h-full w-full bg-red"><div class="relative bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#f70800_30%,transparent_100%)]" style="height: 20rem; background-attachment: fixed;"></div></div> -->
 
     <!-- Tarjetas skills -->
-    <div class="container py-24" style="background-color: #00091d;" id="afterSkills">
+    <section class="container py-24" id="afterSkills">
       <div class="flex flex-wrap -m-4 text-center" id="tarjetasInfo">
         <div class="p-4 md:w-1/4 sm:w-1/2 w-full ">
           <div class="border-2 border-gray-200 px-1 py-6 rounded-lg" id="contenedor-Skills">
@@ -241,7 +223,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- CONTACT -->
     <section class="text-gray-600 body-font relative gradient-bg" id="contact">
